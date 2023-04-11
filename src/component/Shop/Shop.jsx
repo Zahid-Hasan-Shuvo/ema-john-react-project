@@ -12,6 +12,9 @@ fetch('products.json')
 
   },[])
 
+ const handleAddToCart=(product)=>{
+
+ }
   return (
     <div className='shop-container'>
 
@@ -22,6 +25,7 @@ fetch('products.json')
 key={product.id}
 
 product={product}
+handleAddToCart={handleAddToCart}
 
 ></Product>)}
       </div>
